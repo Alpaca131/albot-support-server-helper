@@ -35,7 +35,8 @@ async def on_guild_channel_create(channel: discord.TextChannel):
         "desc": f"\#{channel.name}",
         "urlSource": f"https://discord.com/channels/731467468341510184/{channel.id}",
         "due": date.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
-        "pos": "top"
+        "pos": "top",
+        "idMembers": ["61d91ca75e72b940514e696c"]
     }
     await add_card_to_trello(card_info)
 
