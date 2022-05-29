@@ -1,8 +1,9 @@
-import aiohttp
 import asyncio
-import discord
-from os import environ
 from datetime import timedelta
+from os import environ
+
+import aiohttp
+import discord
 
 client = discord.Client()
 
@@ -36,7 +37,7 @@ async def on_guild_channel_create(channel: discord.TextChannel):
         "urlSource": f"https://discord.com/channels/731467468341510184/{channel.id}",
         "due": date.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
         "pos": "top",
-        "idMembers": ["61d91ca75e72b940514e696c"]
+        "idMembers": ["61d91ca75e72b940514e696b"]
     }
     await add_card_to_trello(card_info)
 
